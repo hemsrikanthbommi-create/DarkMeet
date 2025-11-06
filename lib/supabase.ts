@@ -1,8 +1,8 @@
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL as string;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY as string;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY as string;
+const supabaseUrl = 'https://qmdjfezkbhfxzojcwqsv.supabase.co';
+const supabaseAnonKey = process.env.SUPABASE_KEY;
+const supabaseServiceKey = createClient(supabaseUrl, supabaseKey);
 
 // Client-side: call from React components
 export const createSupabaseClient = () => {
